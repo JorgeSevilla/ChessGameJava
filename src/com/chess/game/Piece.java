@@ -5,9 +5,9 @@ public abstract class Piece {
 	protected Position position;
 	protected PieceColor color;
 
-	public Piece(Position position, PieceColor pieceColor) {
+	public Piece(PieceColor color, Position position) {
+		this.color = color;
 		this.position = position;
-		this.pieceColor = pieceColor;
 	}
 
 	public Position getPosition() {

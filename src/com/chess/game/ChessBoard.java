@@ -11,6 +11,11 @@ public class ChessBoard {
 	
 	private void setupPiece() {
 		// Place Rooks
+		board[0][0] = new Rock(PieceColor.BLACK, new Position(0, 0));
+		board[0][7] = new Rock(PieceColor.BLACK, new Position(0, 7));
+		board[7][0] = new Rock(PieceColor.BLACK, new Position(7, 0));
+		board[7][7] = new Rock(PieceColor.BLACK, new Position(7, 7));
+		
 		
 		
 	}
