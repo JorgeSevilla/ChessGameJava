@@ -5,7 +5,7 @@ public class ChessBoard {
 	private Piece[][] board;
 	
 	public ChessBoard() {
-		this.board = new Piece();
+		this.board = new Piece[8][8];
 		setupPiece();
 	}
 	
