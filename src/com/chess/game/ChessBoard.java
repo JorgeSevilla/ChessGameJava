@@ -11,10 +11,10 @@ public class ChessBoard {
 	
 	private void setupPiece() {
 		// Place Rooks
-		board[0][0] = new Rock(PieceColor.BLACK, new Position(0, 0));
-		board[0][7] = new Rock(PieceColor.BLACK, new Position(0, 7));
-		board[7][0] = new Rock(PieceColor.WHITE, new Position(7, 0));
-		board[7][7] = new Rock(PieceColor.WHITE, new Position(7, 7));
+		board[0][0] = new Rook(PieceColor.BLACK, new Position(0, 0));
+		board[0][7] = new Rook(PieceColor.BLACK, new Position(0, 7));
+		board[7][0] = new Rook(PieceColor.WHITE, new Position(7, 0));
+		board[7][7] = new Rook(PieceColor.WHITE, new Position(7, 7));
 		
 		//Place Knights
 		board[0][1] = new Knights(PieceColor.BLACK, new Position(0, 1));
