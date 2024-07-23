@@ -17,10 +17,10 @@ public class ChessBoard {
 		board[7][7] = new Rook(PieceColor.WHITE, new Position(7, 7));
 		
 		//Place Knights
-		board[0][1] = new Knights(PieceColor.BLACK, new Position(0, 1));
-		board[0][6] = new Knights(PieceColor.BLACK, new Position(0, 6));
-		board[7][1] = new Knights(PieceColor.WHITE, new Position(7, 1));
-		board[7][6] = new Knights(PieceColor.WHITE, new Position(7, 6));
+		board[0][1] = new Knight(PieceColor.BLACK, new Position(0, 1));
+		board[0][6] = new Knight(PieceColor.BLACK, new Position(0, 6));
+		board[7][1] = new Knight(PieceColor.WHITE, new Position(7, 1));
+		board[7][6] = new Knight(PieceColor.WHITE, new Position(7, 6));
 		
 		//Place Bishops
 		board[0][2] = new Bishops(PieceColor.BLACK, new Position(0, 2));
