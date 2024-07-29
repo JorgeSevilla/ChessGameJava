@@ -9,8 +9,17 @@ public class King extends Piece {
 
 	@Override
 	public boolean isValidMove(Position newPosition, Piece[][] board) {
-		// TODO Auto-generated method stub
-		return false;
+		int rowDiff = Math.abs(position.getRow() - newPosition.getRow());
+		int colDiff = Math.abs(position.getColumn() - newPosition.getColumn());
+		
+		boolean isOneSquareMove = rowDiff <= 1 && colDiff <= 1 && !(rowDiff == 0 && colDiff ==0);
+		
+		if (!isOneSquareMove) {
+			return false;
+		}
+		
+		Piece destinationPiece = board[newPosition.getRow()][newPosition.getColumn()];
+		return destinationPiece == null || destinationPiece.getColor() != this.getColor();
 	}
 
 }
