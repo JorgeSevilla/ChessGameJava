@@ -51,4 +51,6 @@ public class ChessBoard {
 			board[end.getRow()][end.getColumn()] = null;
 		}
 	}
+	
+	
 }
